@@ -1,36 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css"/>
-    <litle>document</litle>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="estilos.css" />
+<title>confere ai</title>
 </head>
-  <body>
-      <header> class="cabecalho"
-<h1> BTS</h1>
+<body>
+<header class="cabecalho">
+<h1>sera mesmo?🥲</h1>
 <nav>
- <a href="#">inicio</a>
+<a href="#" class="cabecalho-link">Inicio</a>
 </nav>
 </header>
-         <main>
-    <h2>Descubra a verdade passando o mouse</h2>
-    <article class="cartao">
-    <div class="cartao-interno">
-      <div class="cartao-frente">
-         <img src="https://capricho.abril.com.br/wp-content/uploads/2026/03/BTS-ARIRANG.png?w=960"
-         <p>O BTS é o pior grupo do kpop.</p>
-         </div>
-        </div class="cartao-verso">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkFDMudgwmzKEZnPxj-mHRux7Q9g8WDc6F6bc3kVQs8vI75i9-wfZ8Dyw0&s=10"
-        <p>o BTS é melhor grupo de kpop.</p>
-    </div>
-  </div>
+<main>
+<h2>Descubra a verdade passando o mouse</h2>
+<section>
+<article class="cartao">
+<div class="cartao-interno">
+<div class="cartao-frente">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkFDMudgwmzKEZnPxj-mHRux7Q9g8WDc6F6bc3kVQs8vI75i9-wfZ8Dyw0&s=10"
+<p> BTS tem dois álbuns </p>
+</div>
+<div class="cartao-verso">
+<img src="https://capricho.abril.com.br/wp-content/uploads/2026/03/BTS-ARIRANG.png?w=960">
+<p>BTS nao tem dois álbuns, no total eles tem mais de 20 álbuns.</p>
+</div>
+</div>
+</article>
+<article class="cartao">
+<div class="cartao-interno">
+<div class="cartao-frente">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMdgICJ9juSrHyzC2GWYgaNwfHhXX2mqST7usx6TZ1JpPY7E5MpNnntWMZ&s=10" alt="Enhypen" class="cartao-imagem">
+<p>BTS tem dois álbnuns</p>
+</div>
+<div class="cartao-verso">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkFDMudgwmzKEZnPxj-mHRux7Q9g8WDc6F6bc3kVQs8vI75i9-wfZ8Dyw0&s=10">
+<p>Enhypen nao tem mais 7 membros, um deles saiu pra seguir carreira solo.</p>
+</div>
+</div>
 </article>
 </section>
 </main>
-      <footer>
-  <p>projeto feito por [sara cristina]</p>
-     </footer>
-     </body>
-     </html>
+<footer>
+<p>projeto feito por Yngrid</p>
+</footer>
+</body>
+</html>
+* {
+margin: 0;
+padding: 0;
+}
+
+.cabecalho{
+padding: 15px 25px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: rgb(144, 11, 11);
+}
+
+.cartao {
+width: 260px;
+height: 200px;
+}
+
+.cartao-imagem {
+width: 100%;
+}
+
+body {
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+background-color: rgb(255, 243, 243);
+}
+
+main {
+flex: 1;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.cabecalho-link {
+color: white;
+text-decoration: none;
+}
+
+h1{
+color:azure;
+font-size: 24px;
+}
+
+footer {
+background-color: rgb(144, 11, 11);
+padding: 15px 25px;
+color: #fff;
+}
+
+.cartao-interno{
+position: relative;
+transition: transform 0.8s;
+transform-style: preserve-3d;
+}
+
+.cartao:hover .cartao-interno {
+transform: rotateY(180deg);
+}
+
+.cartao-frente, .cartao-verso {
+position: absolute;
+border-radius: 12px;
+box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+backface-visibility: hidden;
+}
+
+.cartao-verso {
+transform: rotateY(180deg);
+}
+
+section {
+display: flex;
+gap: 16px;
+}
